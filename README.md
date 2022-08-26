@@ -2,12 +2,19 @@ Describe Pizza()
 
 Test: "It should return a Pizza object for toppings and size"
 Code: const firstPizza = new Pizza("Cheese", "large");
-Expected Output: PizzaPizza { toppings: "Cheese", size: "large" }
+Expected Output: Pizza { toppings: "Cheese", size: "large" }
 
+Describe: totalPrice()
 
 Test: "It should return the total of the pizza order"
 Code: Pizza.prototype.totalPrice()
 Expected Output: $7, $12, $13
+
+Describe: handleFormSubmission()
+
+Test: "It should return the total after user submits selections
+Code: let priceTotal(pizza)
+Expected Output: $#
 
 <!-- 
 #### Brainstorm
@@ -16,3 +23,5 @@ Expected Output: $7, $12, $13
 * Create a prototype method that will reveal cost of pizza depending on order
 
 * Add sauce, and cheese options if code works -->
+
+//figure out a way to merge pricing total if there are more than one selection in each property
