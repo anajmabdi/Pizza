@@ -24,4 +24,4 @@ Expected Output: $#
 
 * Add sauce, and cheese options if code works -->
 
-//figure out a way to merge pricing total if there are more than one selection in each property
+<!-- figure out a way to merge pricing total if there are more than one selection in each property -->
