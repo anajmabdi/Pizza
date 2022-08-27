@@ -48,23 +48,26 @@ Pizza.prototype.priceTotal = function() {
   }
   return toppingPrice + sizePrice;
 }
-console.log("check");
 
 
 // UI Logic
 
+//form submission
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const form = document.getElementById("pizza-form");
+  let toppingSelections = document.querySelector('.form-checked:checked').value;
+  let sizeSelection = form.size
+
+//   let newPizza = new Pizza(toppingSelections, sizeSelection);
+//   console.log(newPizza);
+//   document.getElementById("result").innerText= newPizza;
+
+//   document.getElementById("price").removeAttribute("class");
+// }
+
+//window load
 window.addEventListener("load", function() {
   const form = document.getElementById("pizza-form");
   form.addEventListener("submit", handleFormSubmission)
 })
-
-
-function handleFormSubmission(event) {
-  event.preventDefault();
-  const form = document.getElementById("pizza-form");
-  let toppingSelections = form.toppings
-  let sizeSelection = form.size
-  console.log(toppingSelections, sizeSelection);
-
-  let pizza = new Pizza(toppingSelections, sizeSelection);
-}

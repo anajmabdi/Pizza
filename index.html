@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="css/styles.css" rel="stylesheet" type="text/type">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
 <body>
   <h1>Najmita's Pizzeria</h1>
   <form id="pizza-form">
-      <fieldset class="toppings">
+      <fieldset>
+        <div class="form-checked">
         <legend>Topping</legend>
-        <input type="checkbox" id="pepperoni" name="topping">
+        <input type="checkbox" id="pepperoni"  name="topping" value="pepperoni">
         <label for="pepperoni">Pepperoni</label><br/>
     
-        <input type="checkbox" id="pineapple" name="topping">
+        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
         <label for="pineapple">Pineapple</label><br/>
     
-        <input type="checkbox" id="veggie" name="topping">
+        <input type="checkbox" id="veggie" name="topping" value="veggie"> 
         <label for="veggie">Veggie</label>
       </fieldset>
-      <fieldset class="size">
+      <fieldset>
         <legend>Size</legend>
         <input type="radio" id="small" name="size">
         <label for="small">Small</label><br/>
-    
+      </div>
         <input type="radio" id="medium" name="size">
         <label for="medium">Medium</label><br/>
     
@@ -32,5 +33,8 @@
       </fieldset>
       <button type="submit" class="btn">Submit</button>
     </form>
+    <div class= "hidden" id="price">
+      <p>Your total is: <span id="result"></span></p>
+      </div>
 </body>
 </html>
